@@ -13,7 +13,7 @@ SerialPort::~SerialPort ( ) {
 }
 
 int SerialPort::connect ( ) {
-	return connect ( L"COM1" );
+	return connect ( "\\\\.\\COM10" );
 }
 
 int SerialPort::connect ( wchar_t* device ) {
